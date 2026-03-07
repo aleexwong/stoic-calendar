@@ -861,7 +861,7 @@ const expandedMeditationsQuotes: StoicQuote[] = [
     source: "Meditations 7.35",
   },
   {
-    text: "From Antisthenes: It is a Kings lot to do good and to be damned for it.",
+    text: "From Antisthenes: It is a King's lot to do good and to be damned for it.",
     author: "Marcus Aurelius",
     source: "Meditations 7.36",
   },
