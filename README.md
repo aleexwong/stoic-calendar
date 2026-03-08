@@ -10,7 +10,7 @@ A minimalist web app that visualizes the passing of time through the lens of Sto
 ## Features
 
 - **Multiple Time Views** — Toggle between week, month, and year visualizations
-- **50+ Stoic Quotes** — Curated wisdom from Marcus Aurelius, Seneca, and Epictetus
+- **300+ Stoic Quotes** — Curated wisdom from Marcus Aurelius, Seneca, Epictetus, and other Stoic voices
 - **Daily & Random Modes** — Deterministic daily quote or shuffle for variety
 - **Copy to Clipboard** — One-click quote sharing
 - **Dark/Light Theme** — Toggle with system preference detection
@@ -74,7 +74,7 @@ src/
 │   ├── ViewToggle.tsx     # Week/month/year selector
 │   └── ui/                # shadcn/ui components
 ├── data/
-│   └── stoicQuotes.ts     # 100 curated quotes
+│   └── stoicQuotes.ts     # 300+ Stoic quotes
 ├── lib/
 │   ├── dateUtils.ts       # Date helper functions
 │   └── utils.ts           # General utilities (cn)
