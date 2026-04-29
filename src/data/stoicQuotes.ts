@@ -1527,9 +1527,431 @@ const expandedMeditationsQuotes: StoicQuote[] = [
   },
 ];
 
+const additionalStoicQuotes: StoicQuote[] = [
+  // --- SENECA ---
+  {
+    text: "Nusquam est qui ubique est. (One who is everywhere is nowhere.)",
+    author: "Seneca",
+    source: "Letters to Lucilius 2",
+  },
+  {
+    text: "Omnia aliena sunt, tempus tantum nostrum est. (Everything is alien to us; time alone belongs to us.)",
+    author: "Seneca",
+    source: "Letters to Lucilius 1",
+  },
+  {
+    text: "Recede in te ipse quantum potes. (Withdraw into yourself as much as you can.)",
+    author: "Seneca",
+    source: "Letters to Lucilius 7",
+  },
+  {
+    text: "Inimica est multorum conversatio. (The company of many people is harmful.)",
+    author: "Seneca",
+    source: "Letters to Lucilius 7",
+  },
+  {
+    text: "Per aspera ad astra. (Through hardships to the stars.)",
+    author: "Seneca",
+    source: "Hercules Furens 437",
+  },
+  {
+    text: "Nemo liber est qui corpori servit. (No one is free who is a slave to his body.)",
+    author: "Seneca",
+    source: "Letters to Lucilius 77",
+  },
+  {
+    text: "Dum differtur vita transcurrit. (While we delay, life passes.)",
+    author: "Seneca",
+    source: "On the Shortness of Life 1",
+  },
+  {
+    text: "The bravest sight in the world is a great man struggling against adversity.",
+    author: "Seneca",
+    source: "On Providence 2",
+  },
+  {
+    text: "True friendship is to be treated as a single soul in two bodies.",
+    author: "Seneca",
+    source: "Letters to Lucilius 6",
+  },
+  {
+    text: "He who fears death will never do anything worthy of a living man.",
+    author: "Seneca",
+    source: "Letters to Lucilius 78",
+  },
+  {
+    text: "To bear trials with a calm mind robs misfortune of its strength and burden.",
+    author: "Seneca",
+    source: "Hercules Oetaeus",
+  },
+  {
+    text: "No one has been shattered by the blows of Fortune unless he was first deceived by her favors.",
+    author: "Seneca",
+    source: "On the Constancy of the Wise Man 17",
+  },
+  {
+    text: "What progress have I made? I am beginning to be my own friend.",
+    author: "Seneca",
+    source: "Letters to Lucilius 6",
+  },
+  {
+    text: "Grow old in seeking and do not abandon the ship before you have loaded it.",
+    author: "Seneca",
+    source: "Letters to Lucilius 72",
+  },
+  {
+    text: "Let reason guide you, not chance.",
+    author: "Seneca",
+    source: "Letters to Lucilius 8",
+  },
+  {
+    text: "Happy is the man who improves other people and who progresses himself.",
+    author: "Seneca",
+    source: "Letters to Lucilius 7",
+  },
+  {
+    text: "We should hunt out the helpful wherever it is to be found.",
+    author: "Seneca",
+    source: "Letters to Lucilius 8",
+  },
+  {
+    text: "Retire into yourself as much as you can.",
+    author: "Seneca",
+    source: "Letters to Lucilius 7",
+  },
+  {
+    text: "The fool runs after pleasures which soon remove themselves; the wise man pursues a durable good.",
+    author: "Seneca",
+    source: "On the Happy Life 7",
+  },
+  {
+    text: "Give, but give to the person who deserves.",
+    author: "Seneca",
+    source: "Letters to Lucilius 87",
+  },
+  {
+    text: "Philosophy promises above all—common sense, humanity, and fellowship.",
+    author: "Seneca",
+    source: "Letters to Lucilius 5",
+  },
+  {
+    text: "If you shape your life according to nature, you will never be poor; if according to people's opinions, you will never be rich.",
+    author: "Seneca",
+    source: "Letters to Lucilius 16",
+  },
+  {
+    text: "The wise man neither asks for help nor refuses it.",
+    author: "Seneca",
+    source: "Letters to Lucilius 9",
+  },
+  {
+    text: "Hold every hour in your grasp.",
+    author: "Seneca",
+    source: "Letters to Lucilius 1",
+  },
+  {
+    text: "A sword never kills anybody; it is a tool in the killer's hand.",
+    author: "Seneca",
+    source: "Letters to Lucilius 87",
+  },
+  // --- EPICTETUS ---
+  {
+    text: "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  {
+    text: "Make the best use of what is in your power, and take the rest as it happens.",
+    author: "Epictetus",
+    source: "Enchiridion 1",
+  },
+  {
+    text: "Seek not the good in external things; seek it in yourself.",
+    author: "Epictetus",
+    source: "Discourses 1.4",
+  },
+  {
+    text: "You are not your body and hair-style, but your capacity for choice.",
+    author: "Epictetus",
+    source: "Discourses 3.1",
+  },
+  {
+    text: "It is difficulties that show what men are.",
+    author: "Epictetus",
+    source: "Discourses 1.24",
+  },
+  {
+    text: "If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, 'He was ignorant of my other faults, else he would not have mentioned these alone.'",
+    author: "Epictetus",
+    source: "Enchiridion 33",
+  },
+  {
+    text: "The key is to keep company only with people who uplift you, whose presence calls forth your best.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  {
+    text: "We have two ears and one mouth so that we can listen twice as much as we speak.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  {
+    text: "Anyone who has the power to make you believe absurdities has the power to make you commit injustices.",
+    author: "Epictetus",
+    source: "Discourses 2.24",
+  },
+  {
+    text: "It is the nature of the wise to resist pleasures, but the foolish to be a slave to them.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  {
+    text: "Whoever does not regard what he has as most ample wealth is unhappy, though he be master of the whole world.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  {
+    text: "Practice yourself in little things, and thence proceed to greater.",
+    author: "Epictetus",
+    source: "Discourses 1.18",
+  },
+  {
+    text: "Nothing great is created suddenly, any more than a bunch of grapes or a fig.",
+    author: "Epictetus",
+    source: "Discourses 1.15",
+  },
+  {
+    text: "When you are offended at any man's fault, turn to yourself and study your own failings.",
+    author: "Epictetus",
+    source: "Enchiridion 18",
+  },
+  {
+    text: "We cannot choose our external circumstances, but we can always choose how we respond to them.",
+    author: "Epictetus",
+    source: "Enchiridion 1",
+  },
+  {
+    text: "Don't seek to have events happen as you wish, but wish them to happen as they do happen, and all will be well with you.",
+    author: "Epictetus",
+    source: "Enchiridion 8",
+  },
+  {
+    text: "Seek not that the things which happen should happen as you wish; but wish the things which happen to be as they are, and you will have a tranquil flow of life.",
+    author: "Epictetus",
+    source: "Enchiridion 8",
+  },
+  {
+    text: "He is a man of sense who does not grieve for what he has not, but rejoices in what he has.",
+    author: "Epictetus",
+    source: "Fragments",
+  },
+  // --- MARCUS AURELIUS (additional) ---
+  {
+    text: "The present moment always will have been.",
+    author: "Marcus Aurelius",
+    source: "Meditations 9.6",
+  },
+  {
+    text: "Honor that which is greatest in the world—that on account of which all else is great.",
+    author: "Marcus Aurelius",
+    source: "Meditations 5.21",
+  },
+  {
+    text: "Pain is neither intolerable nor everlasting, if you remember its limits and do not add to it with your imagination.",
+    author: "Marcus Aurelius",
+    source: "Meditations 7.64",
+  },
+  {
+    text: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.",
+    author: "Marcus Aurelius",
+    source: "Meditations 8.47",
+  },
+  {
+    text: "We are more often frightened than hurt; and we suffer more from imagination than from reality.",
+    author: "Marcus Aurelius",
+    source: "Meditations 5.8",
+  },
+  {
+    text: "Be like the headland against which the waves break and break: it stands firm, until presently the watery tumult around it subsides once more to rest.",
+    author: "Marcus Aurelius",
+    source: "Meditations 4.49",
+  },
+  {
+    text: "When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous and surly.",
+    author: "Marcus Aurelius",
+    source: "Meditations 2.1",
+  },
+  {
+    text: "Perfection of character is this: to live each day as if it were your last, without frenzy, without apathy, without pretense.",
+    author: "Marcus Aurelius",
+    source: "Meditations 7.69",
+  },
+  {
+    text: "Life is warfare and a journey far from home.",
+    author: "Marcus Aurelius",
+    source: "Meditations 2.17",
+  },
+  {
+    text: "How much more grievous are the consequences of anger than the causes of it.",
+    author: "Marcus Aurelius",
+    source: "Meditations 11.18",
+  },
+  {
+    text: "Very little is needed to make a happy life; it is all within yourself, in your way of thinking.",
+    author: "Marcus Aurelius",
+    source: "Meditations 7.67",
+  },
+  {
+    text: "Never esteem anything as of advantage to you that will make you break your word or lose your self-respect.",
+    author: "Marcus Aurelius",
+    source: "Meditations 3.7",
+  },
+  {
+    text: "Reject your sense of injury and the injury itself disappears.",
+    author: "Marcus Aurelius",
+    source: "Meditations 4.7",
+  },
+  {
+    text: "The soul becomes dyed with the color of its thoughts.",
+    author: "Marcus Aurelius",
+    source: "Meditations 5.16",
+  },
+  // --- ZENO OF CITIUM ---
+  {
+    text: "Steel your sensibilities, so that life shall hurt you as little as possible.",
+    author: "Zeno of Citium",
+    source: "Fragments",
+  },
+  {
+    text: "Man conquers the world by conquering himself.",
+    author: "Zeno of Citium",
+    source: "Fragments",
+  },
+  {
+    text: "The reason we have two ears and only one mouth is that we may listen the more and talk the less.",
+    author: "Zeno of Citium",
+    source: "Diogenes Laërtius 7.23",
+  },
+  {
+    text: "A goal without a method is foolishness.",
+    author: "Zeno of Citium",
+    source: "Fragments",
+  },
+  // --- CHRYSIPPUS ---
+  {
+    text: "The universe itself is God and the universal outpouring of its soul.",
+    author: "Chrysippus",
+    source: "Fragments",
+  },
+  {
+    text: "If I am not, then I am free. If I am, then I am free.",
+    author: "Chrysippus",
+    source: "Fragments",
+  },
+  {
+    text: "Cling to the good in every circumstance.",
+    author: "Chrysippus",
+    source: "Fragments",
+  },
+  // --- CLEANTHES ---
+  {
+    text: "Lead me, Zeus, and you too, Destiny, wherever your decrees have assigned me. I follow willingly.",
+    author: "Cleanthes",
+    source: "Hymn to Zeus",
+  },
+  {
+    text: "The sun, too, shines into cesspools and is not polluted.",
+    author: "Cleanthes",
+    source: "Fragments",
+  },
+  // --- MUSONIUS RUFUS ---
+  {
+    text: "Above all, a human being must take care to think and act well and not be carried away by either pain or pleasure.",
+    author: "Musonius Rufus",
+    source: "Lectures 6",
+  },
+  {
+    text: "Of all existing things, some are in our power and some are not in our power.",
+    author: "Musonius Rufus",
+    source: "Lectures 1",
+  },
+  {
+    text: "The person who has everything should be considered fortunate; the person who desires only what they have should be considered very fortunate.",
+    author: "Musonius Rufus",
+    source: "Lectures 17",
+  },
+  {
+    text: "Eating merely for pleasure and not to strengthen the body is wrong.",
+    author: "Musonius Rufus",
+    source: "Lectures 18",
+  },
+  {
+    text: "We should not consider any action virtuous unless it has the good of others as its object.",
+    author: "Musonius Rufus",
+    source: "Lectures 4",
+  },
+  {
+    text: "Endure the pain that comes from practice, and not the pain that comes from disgrace.",
+    author: "Musonius Rufus",
+    source: "Lectures 6",
+  },
+  // --- MARCUS AURELIUS (more unique) ---
+  {
+    text: "Think of yourself as dead. You have lived your life. Now take what's left and live it properly. What doesn't transmit light creates its own darkness.",
+    author: "Marcus Aurelius",
+    source: "Meditations 7.9",
+  },
+  {
+    text: "You have power over your mind, not outside events. Realize this, and you will find strength.",
+    author: "Marcus Aurelius",
+    source: "Meditations 6.8",
+  },
+  {
+    text: "The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.",
+    author: "Marcus Aurelius",
+    source: "Meditations 6.2",
+  },
+  {
+    text: "Whoever has a why to live can bear almost any how.",
+    author: "Marcus Aurelius",
+    source: "Meditations 7.1",
+  },
+  {
+    text: "It's time you realized that you have something in you more powerful and miraculous than the things that affect you and make you dance like a puppet.",
+    author: "Marcus Aurelius",
+    source: "Meditations 12.19",
+  },
+  {
+    text: "When you arise in the morning, think of what a privilege it is to be alive—to breathe, to think, to enjoy, to love.",
+    author: "Marcus Aurelius",
+    source: "Meditations 2.4",
+  },
+  {
+    text: "You always own the option of having no opinion. There is never any need to get worked up or to trouble your soul about things you can't control.",
+    author: "Marcus Aurelius",
+    source: "Meditations 6.52",
+  },
+  {
+    text: "Never let the things you own end up owning you.",
+    author: "Marcus Aurelius",
+    source: "Meditations 8.7",
+  },
+  {
+    text: "How much trouble he avoids who does not look to see what his neighbor says or does or thinks.",
+    author: "Marcus Aurelius",
+    source: "Meditations 4.18",
+  },
+  {
+    text: "The universe is transformation; life is opinion.",
+    author: "Marcus Aurelius",
+    source: "Meditations 4.3",
+  },
+];
+
 export const stoicQuotes: StoicQuote[] = [
   ...curatedStoicQuotes,
   ...expandedMeditationsQuotes,
+  ...additionalStoicQuotes,
 ];
 
 export const footerMessages = [
